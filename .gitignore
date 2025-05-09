@@ -1,0 +1,14 @@
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.suo
+*.user
+*.cache
+*.ncb
+*.log
+*.VC.db
+.vscode/
+Debug/
+Release/
+
