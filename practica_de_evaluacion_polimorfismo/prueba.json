@@ -1,0 +1,145 @@
+{
+  "nombre": "Museo Nacional de Arte",
+  "obras": [
+    {
+      "tipo": "Pintura",
+      "id": 1,
+      "titulo": "La noche estrellada",
+      "artista": "Van Gogh",
+      "anio": 1889,
+      "tecnica": "oleo",
+      "alto": 73,
+      "ancho": 92,
+      "valorEstimado": 3359000.00
+    },
+    {
+      "tipo": "Pintura",
+      "id": 2,
+      "titulo": "Mujer con sombrero",
+      "artista": "Henri Matisse",
+      "anio": 1905,
+      "tecnica": "acrilico",
+      "alto": 81,
+      "ancho": 60,
+      "valorEstimado": 973000.00
+    },
+    {
+      "tipo": "Escultura",
+      "id": 3,
+      "titulo": "David",
+      "artista": "Miguel Angel",
+      "anio": 1504,
+      "material": "marmol",
+      "peso": 6000,
+      "valorEstimado": 12002000.00
+    },
+    {
+      "tipo": "Escultura",
+      "id": 4,
+      "titulo": "El pensador",
+      "artista": "Rodin",
+      "anio": 1902,
+      "material": "bronce",
+      "peso": 635,
+      "valorEstimado": 637000.00
+    },
+    {
+      "tipo": "Fotografia",
+      "id": 5,
+      "titulo": "Moonrise",
+      "artista": "Ansel Adams",
+      "anio": 1941,
+      "esColor": false,
+      "resolucion": "2048x1536",
+      "valorEstimado": 500.00
+    }
+  ],
+  "guias": [
+    {
+      "id": 101,
+      "nombre": "Maria Lopez",
+      "exhibiciones": [ "Obras clasicas" ]
+    },
+    {
+      "id": 102,
+      "nombre": "Juan Perez",
+      "exhibiciones": [ "Expresionismo y fotografia" ]
+    }
+  ],
+  "exhibiciones": [
+    {
+      "nombre": "Obras clasicas",
+      "guia": {
+        "id": 101,
+        "nombre": "Maria Lopez",
+        "exhibiciones": [ "Obras clasicas" ]
+      },
+      "obras": [
+        {
+          "tipo": "Pintura",
+          "id": 1,
+          "titulo": "La noche estrellada",
+          "artista": "Van Gogh",
+          "anio": 1889,
+          "tecnica": "oleo",
+          "alto": 73,
+          "ancho": 92,
+          "valorEstimado": 3359000.00
+        },
+        {
+          "tipo": "Escultura",
+          "id": 3,
+          "titulo": "David",
+          "artista": "Miguel Angel",
+          "anio": 1504,
+          "material": "marmol",
+          "peso": 6000,
+          "valorEstimado": 12002000.00
+        }
+      ],
+      "valor_total": 15361000.00
+    },
+    {
+      "nombre": "Expresionismo y fotografia",
+      "guia": {
+        "id": 102,
+        "nombre": "Juan Perez",
+        "exhibiciones": [ "Expresionismo y fotografia" ]
+      },
+      "obras": [
+        {
+          "tipo": "Pintura",
+          "id": 2,
+          "titulo": "Mujer con sombrero",
+          "artista": "Henri Matisse",
+          "anio": 1905,
+          "tecnica": "acrilico",
+          "alto": 81,
+          "ancho": 60,
+          "valorEstimado": 973000.00
+        },
+        {
+          "tipo": "Escultura",
+          "id": 4,
+          "titulo": "El pensador",
+          "artista": "Rodin",
+          "anio": 1902,
+          "material": "bronce",
+          "peso": 635,
+          "valorEstimado": 637000.00
+        },
+        {
+          "tipo": "Fotografia",
+          "id": 5,
+          "titulo": "Moonrise",
+          "artista": "Ansel Adams",
+          "anio": 1941,
+          "esColor": false,
+          "resolucion": "2048x1536",
+          "valorEstimado": 500.00
+        }
+      ],
+      "valor_total": 1610500.00
+    }
+  ]
+}

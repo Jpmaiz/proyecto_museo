@@ -131,6 +131,8 @@
     <ClCompile Include="Exhibicion.cpp" />
     <ClCompile Include="Fotografia.cpp" />
     <ClCompile Include="Guia.cpp" />
+    <ClCompile Include="ModuloExhibiciones.cpp" />
+    <ClCompile Include="ModuloGuia.cpp" />
     <ClCompile Include="ModuloObraDeArte.cpp" />
     <ClCompile Include="Museo.cpp" />
     <ClCompile Include="ObraDeArte.cpp" />
@@ -142,10 +144,15 @@
     <ClInclude Include="Exhibicion.h" />
     <ClInclude Include="Fotografia.h" />
     <ClInclude Include="Guia.h" />
+    <ClInclude Include="ModuloExhibiciones.h" />
+    <ClInclude Include="ModuloGuia.h" />
     <ClInclude Include="ModuloObraDeArte.h" />
     <ClInclude Include="Museo.h" />
     <ClInclude Include="ObraDeArte.h" />
     <ClInclude Include="Pintura.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="prueba.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

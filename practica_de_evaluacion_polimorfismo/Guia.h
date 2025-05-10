@@ -21,6 +21,8 @@ private:
 public:
 	Guia(const string& nombre, int id);
 	~Guia();
+
+
 	void asignarAExhibicion(Exhibicion* exhibicion);
 
 	int getId() const;

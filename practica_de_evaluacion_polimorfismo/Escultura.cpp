@@ -25,7 +25,9 @@ string Escultura::toJson() const {
         << "\"artista\":\"" << artista << "\","
         << "\"anio\":" << anioCreacion << ","
         << "\"material\":\"" << material << "\","
-        << "\"peso\":" << peso
+		<< "\"peso\":" << peso << ","
+        << fixed << setprecision(2)
+		<< "\"valorEstimado\":" << calcularValorEstimado()
         << "}";
     return ss.str();
 }

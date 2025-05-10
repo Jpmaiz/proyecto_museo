@@ -20,7 +20,9 @@ string Fotografia::toJson() const {
         << "\"artista\":\"" << artista << "\","
         << "\"anio\":" << anioCreacion << ","
         << "\"esColor\":" << (esColor ? "true" : "false") << ","
-        << "\"resolucion\":\"" << resolucion << "\""
+		<< "\"resolucion\":\"" << resolucion << "\"" << ","
+        << fixed << setprecision(2)
+		<< "\"valorEstimado\":" << calcularValorEstimado()
         << "}";
     return ss.str();
 }

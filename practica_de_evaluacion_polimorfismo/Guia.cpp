@@ -15,9 +15,14 @@ Guia::~Guia()
 
 void Guia::asignarAExhibicion(Exhibicion* exhibicion)
 {
+	for (int i = 0; i < ind; i++) {
+		if (exhibiciones[i] == exhibicion) {
+			return; 
+		}
+	}
+
 	if (ind < tamMax) {
-		exhibiciones[ind] = exhibicion;
-		ind++;
+		exhibiciones[ind++] = exhibicion;
 	}
 	else {
 		cout << "No se puede agregar más exhibiciones. Capacidad máxima alcanzada." << endl;

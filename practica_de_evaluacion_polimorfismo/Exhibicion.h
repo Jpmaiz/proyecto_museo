@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#include <iomanip>
 #include "ObraDeArte.h"
 #include "Guia.h"
 
@@ -23,6 +24,7 @@ public:
 	void agregarObra(ObraDeArte* obra);
 	void asignarGuia(Guia* guia);
 
+	double calcularValorTotal() const;
 
 	Guia* getGuia() const;
 	ObraDeArte** getObras() const;

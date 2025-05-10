@@ -28,7 +28,9 @@ string Pintura::toJson() const
         << "\"anio\":" << anioCreacion << ","
         << "\"tecnica\":\"" << tecnica << "\","
         << "\"alto\":" << alto << ","
-        << "\"ancho\":" << ancho
+		<< "\"ancho\":" << ancho << ","
+        << fixed << setprecision(2)
+		<< "\"valorEstimado\":" << calcularValorEstimado()
         << "}";
     return ss.str();
 }

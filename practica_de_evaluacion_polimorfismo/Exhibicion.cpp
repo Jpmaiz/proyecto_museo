@@ -30,6 +30,15 @@ void Exhibicion::asignarGuia(Guia* guia)
 	guia->asignarAExhibicion(this);
 }
 
+double Exhibicion::calcularValorTotal() const
+{
+    double total = 0.0;
+    for (int i = 0; i < ind; i++) {
+        total += obras[i]->calcularValorEstimado();
+    }
+    return total;
+}
+
 Guia* Exhibicion::getGuia() const
 {
     return guia;
@@ -58,13 +67,20 @@ string Exhibicion::toJson() const
         ss << "\"guia\":null,";
     }
 
-    
+    // Obras
     ss << "\"obras\":[";
+    double total = 0.0;
     for (int i = 0; i < ind; i++) {
         ss << obras[i]->toJson();
         if (i < ind - 1) ss << ",";
+        total += obras[i]->calcularValorEstimado(); // acumulando valor
     }
-    ss << "]";
+    ss << "],";
+
+    // Valor total
+    ss << fixed << setprecision(2); // evita notación científica
+    ss << "\"valor_total\":" << total;
+
     ss << "}";
 
     return ss.str();
